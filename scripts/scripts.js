@@ -8,7 +8,7 @@ let popupInputProfession = popup.querySelector('.popup__input_profession');
 let popupSave = popup.querySelector('.popup__button-save');
 
 function togglePopup() {
-  popup.classList.toggle('popup__edit');
+  popup.classList.toggle('popup_edit');
 };
 popup.addEventListener('click', function(event){
   if (event.target === event.currentTarget) {
