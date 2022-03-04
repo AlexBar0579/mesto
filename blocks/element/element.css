@@ -1,0 +1,13 @@
+.element {
+  display: grid;
+  padding: 0;
+  grid-template-rows: repeat(auto-fit, minmax(282px, 1fr));
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+@media screen and (max-width: 425px) {
+  .element {
+    max-width: 88.12vw;
+    margin: 0 auto;
+  }
+}

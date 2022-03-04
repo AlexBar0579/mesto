@@ -1,0 +1,14 @@
+.popup__input_name {
+  margin: 0 36px 43px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+@media screen and (max-width: 425px) {
+  .popup__input_name {
+    margin: 0 auto 43px;
+
+  }
+}
