@@ -6,4 +6,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: #FFFFFF;
+  border-radius: 0 0 10px 10px;
+}
+@media screen and (max-width: 900px) {
+  .element__block {
+    max-width: 100%;
+  }
 }

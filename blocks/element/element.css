@@ -1,13 +1,13 @@
 .element {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding: 0;
-  grid-template-rows: repeat(auto-fit, minmax(282px, 1fr));
-  background: #FFFFFF;
+  margin: 0;
   border-radius: 10px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .element {
-    max-width: 88.12vw;
-    margin: 0 auto;
+    max-width: 100%;
   }
 }
+

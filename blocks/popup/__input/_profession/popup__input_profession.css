@@ -6,7 +6,7 @@
   line-height: 17px;
   color: #000000;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 525px) {
   .popup__input_profession {
     margin: 0 auto;
 

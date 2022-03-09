@@ -3,12 +3,13 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
-  justify-content: space-between;
   row-gap: 20px;
   column-gap: 17px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 900px) {
   .elements {
-    max-width: 88.12vw;
+    max-width: 100%;
+    margin: 0 19px;
   }
 }
+

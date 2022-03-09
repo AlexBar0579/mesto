@@ -2,8 +2,9 @@
   max-width: 880px;
   height: 1px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 900px) {
   .header__line {
-    max-width: 320px;
+    max-width: 100%;
+
   }
 }
