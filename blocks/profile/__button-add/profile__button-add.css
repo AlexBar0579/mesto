@@ -5,7 +5,8 @@
   box-sizing: border-box;
   border-radius: 2px;
   margin: auto 0;
-  background: url(./../../../images/plus.png) no-repeat center;
+  padding: 0;
+  background: url(./../../../images/plus.svg) no-repeat center;
   cursor: pointer;
 }
 .profile__button-add:hover {
@@ -15,5 +16,6 @@
   .profile__button-add {
     margin: 36px 19px 0;
     width: 100%;
+    background: url(./../../../images/plus_min.svg) no-repeat center;
   }
 }

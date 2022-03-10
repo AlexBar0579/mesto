@@ -3,12 +3,13 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 195px auto 0;
+  margin: 0 auto;
+  top: calc(50% - 165px);
 }
 @media screen and (max-width: 525px) {
   .popup__container {
     margin: 123px auto 0;
-    max-width: 282px;
-    height: 322px;
+    width: 282px;
+    top: calc(50% - 161px);
   }
 }

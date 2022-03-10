@@ -12,7 +12,6 @@
   opacity: 0.5;
 }
 .element__button-heart:active {
-  background: url(./../../../images/heart_active.png) no-repeat center;
-  border: none;
+  background: url(./../../../images/heart_active.svg) no-repeat center;
   opacity: 1;
 }
