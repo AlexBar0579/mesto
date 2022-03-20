@@ -11,7 +11,7 @@
 .element__button-heart:hover {
   opacity: 0.5;
 }
-.element__button-heart:active {
+.element__button-heart_active {
   background: url(./../../../images/heart_active.svg) no-repeat center;
   opacity: 1;
 }
