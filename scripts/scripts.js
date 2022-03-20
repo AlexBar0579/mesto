@@ -71,7 +71,6 @@ function displayElement (card) {
   elm.querySelector('.element__mesto-name').textContent = card.name;
   elm.querySelector('.element__button-heart').addEventListener('click', bottonHeart);
   elm.querySelector('.element__button-trash').addEventListener('click', bottonTrash);
-  elm.querySelector('.element__image').addEventListener('click', bigImg);
   return elm;
 }
 function addCard (card) {
@@ -95,21 +94,23 @@ function newCards (evt) {
   event.currentTarget.classList.toggle('element__button-heart_active');
 }
 
+
 openButtonEdit.addEventListener('click', () => {
   openPopupEdit();
 });
 openButtonAdd.addEventListener('click', () => {
   openPopup(popupAdd);
 });
-popupButtonCloseImg.addEventListener('click', () => {
-  closePopup(popupImg);
-});
+
 closeButtonEdit.addEventListener('click', () => {
   closePopup(popupEdit);
 });
 closeButtonAdd.addEventListener('click', () => {
   closePopup(popupAdd);
 });
+/*popupButtonCloseImg.addEventListener('click', () => {
+  closePopup(popupImg);
+});*/
 popupFormEdit.addEventListener('submit', savePopupForm);
 popupFormAdd.addEventListener('submit', newCards);
 
