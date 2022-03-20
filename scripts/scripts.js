@@ -65,7 +65,6 @@ function savePopupForm(evt) {
   profileProfession.textContent = popupInputProfession.value;
   closePopup(popupEdit);
 };
-
 function displayElement (card) {
   const elm = templateElm.querySelector('.element').cloneNode(true);
   elm.querySelector('.element__image').src = card.link;
@@ -75,12 +74,10 @@ function displayElement (card) {
   elm.querySelector('.element__image').addEventListener('click', bigImg);
   return elm;
 }
-
 function addCard (card) {
   const cardElm = displayElement(card);
   elementsCard.prepend(cardElm);
 }
-
 function newCards (evt) {
   evt.preventDefault();
   const newCard = {name : popupInputMestoName.value,
@@ -90,18 +87,12 @@ function newCards (evt) {
   popupInputMestoLink.value = '';
   closePopup(popupAdd);
 }
-
  function bottonTrash (event) {
    const trashElm = event.currentTarget.closest('.element');
    trashElm.remove();
  }
  function bottonHeart (event) {
   event.currentTarget.classList.toggle('element__button-heart_active');
-}
-function bigImg (event) {
-  openPopup(popupImg);
-  popupImgImage.scr = event.target.src;
-  popupImgTitle. textContent = event.target.nextElementSibling.firstElementChild.textContent;
 }
 
 openButtonEdit.addEventListener('click', () => {
