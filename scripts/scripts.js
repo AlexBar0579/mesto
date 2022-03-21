@@ -32,12 +32,11 @@ let profileProfession = document.querySelector('.profile__profession');
 const popups = document.querySelector('.popup');
 const popupEdit = document.querySelector('.popup_edit');
 const popupFormEdit = document.querySelector('.popup__content_edit');
-const closeButtonEdit = document.querySelector('.popup__button-close');
+const closeButton = document.querySelectorAll('.popup__button-close');
 let popupInputName = popupEdit.querySelector('.popup__input_type_name');
 let popupInputProfession = popupEdit.querySelector('.popup__input_type_profession');
 const popupAdd = document.querySelector('.popup_add');
 const popupFormAdd = document.querySelector('.popup__content_add');
-const closeButtonAdd = document.querySelector('.popup__button-close');
 let popupInputMestoName = popupAdd.querySelector('.popup__input_mesto_name');
 let popupInputMestoLink = popupAdd.querySelector('.popup__input_mesto_link');
 const popupImg = document.querySelector('.popup-img');
@@ -71,6 +70,7 @@ function displayElement (card) {
   elm.querySelector('.element__mesto-name').textContent = card.name;
   elm.querySelector('.element__button-heart').addEventListener('click', bottonHeart);
   elm.querySelector('.element__button-trash').addEventListener('click', bottonTrash);
+  /*elm.querySelector('.element__image').addEventListener('click', bigImg);*/
   return elm;
 }
 function addCard (card) {
@@ -101,16 +101,19 @@ openButtonEdit.addEventListener('click', () => {
 openButtonAdd.addEventListener('click', () => {
   openPopup(popupAdd);
 });
-
+/*
 closeButtonEdit.addEventListener('click', () => {
   closePopup(popupEdit);
-});
-closeButtonAdd.addEventListener('click', () => {
-  closePopup(popupAdd);
-});
-/*popupButtonCloseImg.addEventListener('click', () => {
-  closePopup(popupImg);
 });*/
+
+closeButton.forEach((item) => {
+  item.addEventListener('click', (event) => {
+  if (event.target.closest('.popup')) {
+    closePopup(popups);
+  }
+  });
+});
+
 popupFormEdit.addEventListener('submit', savePopupForm);
 popupFormAdd.addEventListener('submit', newCards);
 
