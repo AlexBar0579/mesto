@@ -31,17 +31,15 @@ let profileName = document.querySelector('.profile__name');
 let profileProfession = document.querySelector('.profile__profession');
 
 const popups = document.querySelector('.popup');
+const closeButton = document.querySelectorAll('.popup__button-close');
 
 const popupEdit = document.querySelector('.popup_edit');
 const popupFormEdit = document.querySelector('.popup__content_edit');
-const closeButton = document.querySelectorAll('.popup__button-close');
-const closeButtonEdit = document.querySelectorAll('.popup__button-close');
 let popupInputName = popupEdit.querySelector('.popup__input_type_name');
 let popupInputProfession = popupEdit.querySelector('.popup__input_type_profession');
 
 const popupAdd = document.querySelector('.popup_add');
 const popupFormAdd = document.querySelector('.popup__content_add');
-const closeButtonAdd = document.querySelector('.popup__button-close');
 let popupInputMestoName = popupAdd.querySelector('.popup__input_mesto_name');
 let popupInputMestoLink = popupAdd.querySelector('.popup__input_mesto_link');
 
@@ -115,7 +113,6 @@ openButtonAdd.addEventListener('click', () => {
   openPopup(popupAdd);
 });
 
-
 popupButtonCloseImg.addEventListener('click', () => {
   closePopup(popupImg);
 });
@@ -131,4 +128,3 @@ popupFormEdit.addEventListener('submit', savePopupForm);
 popupFormAdd.addEventListener('submit', newCards);
 
 initialCards.forEach(addCard);
-
