@@ -102,7 +102,7 @@ function newCards (evt) {
 
 function bigImg (elm) {
   openPopup(popupImg);
-  popupImgImage.scr = elm.target.link;
+  popupImgImage.src = elm.target.src;
   popupImgTitle.textContent = elm.target.nextElementSibling.firstElementChild.textContent;
 }
 
@@ -128,3 +128,4 @@ popupFormEdit.addEventListener('submit', savePopupForm);
 popupFormAdd.addEventListener('submit', newCards);
 
 initialCards.forEach(addCard);
+
